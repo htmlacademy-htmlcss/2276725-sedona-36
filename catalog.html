@@ -28,12 +28,9 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"></a>
-            <span class="visualy-hidden">Поиск</span>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"></a>
-            <span class="visualy-hidden">Лайк</span>
+            <a class="navigation-link" href="#">
+            <span class="visualy-hidden">Избранное</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Хочу сюда</a>
@@ -47,9 +44,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <span class="visualy-hidden">
-                <img class="home-logo" href="index.html" alt="Главная">
-              </span>
+                <img class="home-logo" src="#" alt="На главную">
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -90,7 +85,8 @@
               </li>
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="house-type">Мотель</label>
+                  <input class="control-input" type="radio" name="house-type">Мотель
+                </label>
               </li>
               <li class="filter-item">
                 <label class="control">
@@ -100,7 +96,6 @@
             </ul>
           </fieldset>
           <div class="costs">
-
             <label for="amount">Стоимость,₽:</label>
             <input type="number" min="0" form="amount" name="amount" placeholder="0   от">
             <input type="number" max="9000" form="amount" name="amount" placeholder="9000   от">
@@ -126,6 +121,9 @@
         <button  type="button">
           <span class="visualy-hidden">Показать список</span>
         </button>
+      </section>
+      <section class="hotels">
+        <h2 class="visualy-hidden">Список предлагаемых гостиниц</h2>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -205,16 +203,8 @@
           </li>
         </ul>
       </section>
-      <section class="footer-tel">
-        <h2 class="visualy-hidden">Наш телефон</h2>
-        <a class="telephone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
-      </section>
-      <section class="footer-email">
-        <h2 class="visualy-hidden">Наш email</h2>
-        <a class="button" href="https://htmlacademy.ru/">
-          <span class="visualy-hidden">.html academy</span>
-        </a>
-      </section>
+      <a class="telephone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
+      <a class="button" href="https://htmlacademy.ru/">.html academy</a>
     </footer>
   </body>
 </html>
