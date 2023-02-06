@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Логотип сайта о Седоне" src="images/logo-sedona.svg" width="138" height="64">
+        <img class="page-header-logo" alt="Логотип сайта о Седоне" src="images/logo-sedona.png" width="138" height="64">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -141,7 +142,7 @@
             </a>
             <p class="type hotel-card-price">Гостиница От 5000 ₽</p>
             <a href="#" class="button hotel-card-button-more">Подробнее</a>
-            <button class="button hotel-card-button-favorites" type="button">В Избранном</button>
+            <button class="button hotel-card-button-in-favorites" type="button">В Избранном</button>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -162,6 +163,17 @@
             <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
           </li>
         </ul>
+        <section class="subscribe">
+          <h2>Подпишитесь на рассылку?</h2>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="email-form" action="#" method="post">
+            <label for="email-form">
+              <span class="visualy-hidden">Подписка на рассылку</span>
+              <input class="field" placeholder="Ваш email" type="email" name="email-form" id="email-form" required>
+            </label>
+            <button class="button email-form-submit" type="submit">Подписаться</button>
+          </form>
+        </section>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled" href="#">1</a>
@@ -205,7 +217,7 @@
       </section>
       <a class="telephone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
       <a class="button" href="https://htmlacademy.ru/">
-        <img src="images/logo-academy.svg" width="115" height="33" alt="Логотип html academy">
+        <img src="images/logo-academy.png" width="115" height="33" alt="Логотип html academy">
       </a>
     </footer>
   </body>
