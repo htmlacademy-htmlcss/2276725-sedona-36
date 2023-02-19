@@ -16,6 +16,9 @@
 
 html {
   background-color: #F2F2F2;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 body {
@@ -25,6 +28,10 @@ body {
   color: #000000;
   background-color: #ffffff;
   width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .navigation-link {
@@ -34,6 +41,88 @@ body {
   color: inherit;
   text-decoration: none;
   text-align: center;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+width: 138px;
+margin-bottom: 6.05px;
+margin-left: 2px;
+}
+
+.navigation-list {
+margin: 0;
+padding: 0;
+list-style: none;
+width: 439px;
+}
+
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation-user {
+  width: 308px;
+  margin-left: auto;
+}
+
+.page-container {
+width: 1200px;
+margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-item {
+  display: flex;
+  width: 1000px;
+}
+
+.advantages-item-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recomendation-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.recomendation-item {
+  display: flex;
+  width: 1000px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .promo {
@@ -47,6 +136,10 @@ body {
 .main-index {
   color: #000000;
   text-align: center;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .subscribe {
