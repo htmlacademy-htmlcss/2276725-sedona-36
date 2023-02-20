@@ -77,69 +77,64 @@
                       <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
                     </label>
                   </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-group">
-              <legend class="filter-title">Тип жилья:</legend>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="house-type" checked>Гостиница
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="house-type">Мотель
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="house-type">Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          <!-- </div> -->
-          <!-- <div class="costs"> -->
-            <div class="amout-wrapper">
-            <label for="amount">Стоимость,₽:</label>
-            <!-- <div class="amout-wrapper"> -->
-              <input type="number" min="0" form="amount" name="amount" placeholder="0   от">
-              <input type="number" max="9000" form="amount" name="amount" placeholder="9000   от">
-            <!-- </div> -->
-            <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
-          </div>
-          <div class="button-wrapper">
-            <button class="button">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
-          </div>
-          </div>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Тип жилья:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="house-type" checked>Гостиница
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="house-type">Мотель
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="house-type">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="amout-wrapper">
+                <label for="amount">Стоимость,₽:</label>
+                <input type="number" min="0" form="amount" name="amount" placeholder="0   от">
+                <input type="number" max="9000" form="amount" name="amount" placeholder="9000   от">
+                <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
+              </div>
+              <div class="button-wrapper">
+                <button class="button">Применить</button>
+                <button class="button" type="reset">Сбросить</button>
+              </div>
+            </div>
           </form>
         </section>
       </div>
       <section class="select">
         <div class="search-result-wrapper">
-        <h2 class="visualy-hidden" hidden>Фильтр по выбранным опциям</h2>
-        <!-- <div class="search-result-wrapper"></div> -->
-        <p class="search-result">Найдено гостиниц: 38</p>
-        <div class="select-control-wrapper">
-        <select class="select-control" aria-label="Фильтр">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-      </div>
-      <div class="view-wrapper">
-        <button type="button">
-          <span class="visualy-hidden">Показать карточки</span>
-        </button>
-        <button  type="button">
-          <span class="visualy-hidden">Показать по одному</span>
-        </button>
-        <button  type="button">
-          <span class="visualy-hidden">Показать список</span>
-        </button>
-      </div>
-      </div>
+          <h2 class="visualy-hidden" hidden>Фильтр по выбранным опциям</h2>
+          <p class="search-result">Найдено гостиниц: 38</p>
+          <div class="select-control-wrapper">
+            <select class="select-control" aria-label="Фильтр">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
+          <div class="view-wrapper">
+            <button type="button">
+              <span class="visualy-hidden">Показать карточки</span>
+            </button>
+            <button  type="button">
+              <span class="visualy-hidden">Показать по одному</span>
+            </button>
+            <button  type="button">
+              <span class="visualy-hidden">Показать список</span>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="hotels">
         <h2 class="visualy-hidden" hidden>Список предлагаемых гостиниц</h2>
