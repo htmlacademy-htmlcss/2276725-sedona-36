@@ -34,12 +34,13 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <input class="want-this" type="button" value="Хочу сюда!">
+            <a class="navigation-link" href="#"></a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <div class="main-header">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -55,26 +56,27 @@
           </ul>
         </header>
         <section class="hotel-choice">
-          <h2 class="visualy-hidden">Фильтр для гостиницы</h2>
+          <h2 class="visualy-hidden" hidden>Фильтр для гостиницы</h2>
           <form class="filter-section" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-group">
-              <legend class="filter-title">Инфраструктура:</legend>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="waterpool" checked>Бассейн
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
-                  </label>
-                </li>
+            <div class="hotel-choice-wrapper">
+              <fieldset class="filter-group">
+                <legend class="filter-title">Инфраструктура:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="waterpool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                    </label>
+                  </li>
               </ul>
             </fieldset>
             <fieldset class="filter-group">
@@ -97,24 +99,36 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="costs">
-              <label for="amount">Стоимость,₽:</label>
+          <!-- </div> -->
+          <!-- <div class="costs"> -->
+            <div class="amout-wrapper">
+            <label for="amount">Стоимость,₽:</label>
+            <!-- <div class="amout-wrapper"> -->
               <input type="number" min="0" form="amount" name="amount" placeholder="0   от">
               <input type="number" max="9000" form="amount" name="amount" placeholder="9000   от">
-              <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
-            </div>
+            <!-- </div> -->
+            <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
+          </div>
+          <div class="button-wrapper">
             <button class="button">Применить</button>
             <button class="button" type="reset">Сбросить</button>
+          </div>
+          </div>
           </form>
         </section>
       </div>
       <section class="select">
-        <h2 class="visualy-hidden">Фильтр по выбранным опциям</h2>
+        <div class="search-result-wrapper">
+        <h2 class="visualy-hidden" hidden>Фильтр по выбранным опциям</h2>
+        <!-- <div class="search-result-wrapper"></div> -->
         <p class="search-result">Найдено гостиниц: 38</p>
+        <div class="select-control-wrapper">
         <select class="select-control" aria-label="Фильтр">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
+      </div>
+      <div class="view-wrapper">
         <button type="button">
           <span class="visualy-hidden">Показать карточки</span>
         </button>
@@ -124,76 +138,100 @@
         <button  type="button">
           <span class="visualy-hidden">Показать список</span>
         </button>
+      </div>
+      </div>
       </section>
       <section class="hotels">
-        <h2 class="visualy-hidden">Список предлагаемых гостиниц</h2>
+        <h2 class="visualy-hidden" hidden>Список предлагаемых гостиниц</h2>
         <ul class="hotel-list">
           <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" alt="Отель Amara Resort & Spa">
-              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            </a>
-            <p class="type hotel-card-price">Гостиница От 4000 ₽</p>
-            <a href="#" class="button hotel-card-button-more">Подробнее</a>
-            <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+            <div class="hotel-list-wrapper">
+              <a class="hotel-card-link" href="hotel.html">
+                <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" alt="Отель Amara Resort & Spa">
+                <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+              </a>
+              <p class="type hotel-card-price">Гостиница От 4000 ₽</p>
+              <a href="#" class="button hotel-card-button-more">Подробнее</a>
+              <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+            </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" alt="Отель Villas at Poco Diablo">
-              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-            </a>
-            <p class="type hotel-card-price">Гостиница От 5000 ₽</p>
-            <a href="#" class="button hotel-card-button-more">Подробнее</a>
-            <button class="button hotel-card-button-in-favorites" type="button">В Избранном</button>
+            <div class="hotel-list-wrapper">
+              <a class="hotel-card-link" href="hotel.html">
+                <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" alt="Отель Villas at Poco Diablo">
+                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+               </a>
+              <p class="type hotel-card-price">Гостиница От 5000 ₽</p>
+              <a href="#" class="button hotel-card-button-more">Подробнее</a>
+              <button class="button hotel-card-button-in-favorites" type="button">В Избранном</button>
+            </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" alt="Отель Desert Quail Inn">
-              <h3 class="hotel-card-title">Desert Quail Inn</h3>
-            </a>
-            <p class="type hotel-card-price">Гостиница От 2500 ₽</p>
-            <a href="#" class="button hotel-card-button-more">Подробнее</a>
-            <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+            <div class="hotel-list-wrapper">
+              <a class="hotel-card-link" href="hotel.html">
+                <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" alt="Отель Desert Quail Inn">
+                <h3 class="hotel-card-title">Desert Quail Inn</h3>
+              </a>
+              <p class="type hotel-card-price">Гостиница От 2500 ₽</p>
+              <a href="#" class="button hotel-card-button-more">Подробнее</a>
+              <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+            </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" alt="Отель GreenTree Inn">
-              <h3 class="hotel-card-title">GreenTree Inn</h3>
-            </a>
-            <p class="type hotel-card-price">Гостиница От 1500 ₽</p>
-            <a href="#" class="button hotel-card-button-more">Подробнее</a>
-            <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+            <div class="hotel-list-wrapper">
+              <a class="hotel-card-link" href="hotel.html">
+                <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" alt="Отель GreenTree Inn">
+                <h3 class="hotel-card-title">GreenTree Inn</h3>
+              </a>
+              <p class="type hotel-card-price">Гостиница От 1500 ₽</p>
+              <a href="#" class="button hotel-card-button-more">Подробнее</a>
+              <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+            </div>
           </li>
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">1</a>
+            <div class="pagination-wrapper">
+              <a class="pagination-link pagination-prev pagination-disabled" href="#">1</a>
+            </div>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">2</a>
+            <div class="pagination-wrapper">
+              <a class="pagination-link pagination-prev pagination-disabled" href="#">2</a>
+            </div>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">3</a>
+            <div class="pagination-wrapper">
+              <a class="pagination-link pagination-prev pagination-disabled" href="#">3</a>
+            </div>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">4</a>
+            <div class="pagination-wrapper">
+              <a class="pagination-link pagination-prev pagination-disabled" href="#">4</a>
+            </div>
           </li>
-          <li class="pagination-item">...</li>
+          <div class="pagination-wrapper">
+            <li class="pagination-item">...</li>
+          </div>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">10</a>
+            <div class="pagination-wrapper">
+              <a class="pagination-link pagination-prev pagination-disabled" href="#">10</a>
+            </div>
           </li>
         </ul>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку?</h2>
-        <p class="subscribe-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="email-form" action="#" method="post">
-          <label>
-            <span class="visualy-hidden">Подписка на рассылку</span>
-            <input class="field" placeholder="Ваш email" type="email" name="email-form" id="email-form" required>
-          </label>
+        <div class="subscribe-wrapper">
+          <h2 class="subscribe-title">Подпишитесь на рассылку?</h2>
+          <p class="subscribe-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="email-form" action="#" method="post">
+            <label>
+              <span class="visualy-hidden">Подписка на рассылку</span>
+              <input class="field" placeholder="Ваш email" type="email" name="email-form" id="email-form" required>
+            </label>
           <button class="button email-form-submit" type="submit">Подписаться</button>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
