@@ -102,15 +102,24 @@
                   </li>
                 </ul>
               </fieldset>
-              <div class="amout-wrapper">
-                <label for="amount">Стоимость,₽:</label>
-                <input type="number" min="0" form="amount" name="amount" placeholder="0   от">
-                <input type="number" max="9000" form="amount" name="amount" placeholder="9000   от">
-                <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
+            </div>
+              <div class="amount-container">
+                <fieldset class="amount-group">
+                <label for="amount">Стоимость,₽:
+              <!-- <div> -->
+              <div class="amount-wrapper">
+                <input type="number" min="0" form="amount" name="amount" placeholder="0 от">
+                <input type="number" max="9000" form="amount" name="amount" placeholder="9000 от">
               </div>
-              <div class="button-wrapper">
+              <div class="range-wrapper">
+                  <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
+              </div>
+              </label>
+            </fieldset>
+              <!-- </div> -->
+              <!-- <div class="button-wrapper"> -->
                 <button class="button">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
+                <button class="button-reset" type="reset">Сбросить</button>
               </div>
             </div>
           </form>
@@ -147,78 +156,100 @@
         <ul class="hotel-list">
           <div class="hotel-list-wrapper">
           <li class="hotel-card">
-            <!-- <div class="hotel-list-wrapper"> -->
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" alt="Отель Amara Resort & Spa" width="300px" height="212px">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="type hotel-card-price">Гостиница От 4000 ₽</p>
-              <a href="#" class="button hotel-card-button-more">Подробнее</a>
-              <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
-            <!-- </div> -->
+              <div class="hotel-info-wraper">
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 4000 ₽</p>
+                <a href="#" class="button hotel-card-button-more">Подробнее</a>
+                <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+                <img class="star-rating" alt="***">
+                <div class="rating-number-wrapper">
+                  <p class="rating-number">Рейтинг: 8,5</p>
+                </div>
+              </div>
           </li>
           <li class="hotel-card">
-            <!-- <div class="hotel-list-wrapper"> -->
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" alt="Отель Villas at Poco Diablo" width="300px" height="212px">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                </a>
-              <p class="type hotel-card-price">Гостиница От 5000 ₽</p>
-              <a href="#" class="button hotel-card-button-more">Подробнее</a>
-              <button class="button hotel-card-button-in-favorites" type="button">В Избранном</button>
-            <!-- </div> -->
+              <div class="hotel-info-wraper">
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 5000 ₽</p>
+                <a href="#" class="button hotel-card-button-more">Подробнее</a>
+                <button class="button hotel-card-button-in-favorites" type="button">В Избранном</button>
+                <img class="star-rating" alt="****">
+                <div class="rating-number-wrapper">
+                  <p class="rating-number">Рейтинг: 9,2</p>
+                </div>
+              </div>
           </li>
           <li class="hotel-card">
-            <!-- <div class="hotel-list-wrapper"> -->
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" alt="Отель Desert Quail Inn" width="300px" height="212px">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
-              <p class="type hotel-card-price">Гостиница От 2500 ₽</p>
-              <a href="#" class="button hotel-card-button-more">Подробнее</a>
-              <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
-            <!-- </div> -->
+              <div class="hotel-info-wraper">
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 2500 ₽</p>
+                <a href="#" class="button hotel-card-button-more">Подробнее</a>
+                <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+                <img class="star-rating" alt="***">
+                <div class="rating-number-wrapper">
+                  <p class="rating-number">Рейтинг: 6,9</p>
+                </div>
+              </div>
           </li>
           <li class="hotel-card">
-            <!-- <div class="hotel-list-wrapper"> -->
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" alt="Отель GreenTree Inn" width="300px" height="212px">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
-              <p class="type hotel-card-price">Гостиница От 1500 ₽</p>
-              <a href="#" class="button hotel-card-button-more">Подробнее</a>
-              <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
-            <!-- </div> -->
+              <div class="hotel-info-wraper">
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-card-price">От 1500 ₽</p>
+                <a href="#" class="button hotel-card-button-more">Подробнее</a>
+                <button class="button hotel-card-button-favorites" type="button">В Избранное</button>
+                <img class="star-rating" alt="**">
+                <div class="rating-number-wrapper">
+                  <p class="rating-number">Рейтинг: 5,0</p>
+                </div>
+              </div>
           </li>
         </div>
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
             <div class="pagination-wrapper">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">1</a>
+              <a class="pagination-link pagination-prev" href="#">1</a>
             </div>
           </li>
           <li class="pagination-item">
             <div class="pagination-wrapper">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">2</a>
+              <a class="pagination-link" href="#">2</a>
             </div>
           </li>
           <li class="pagination-item">
             <div class="pagination-wrapper">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">3</a>
+              <a class="pagination-link" href="#">3</a>
             </div>
           </li>
           <li class="pagination-item">
             <div class="pagination-wrapper">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">4</a>
+              <a class="pagination-link" href="#">4</a>
             </div>
           </li>
-          <div class="pagination-wrapper">
-            <li class="pagination-item">...</li>
-          </div>
+            <li class="pagination-item">
+              <div class="pagination-wrapper">
+              <a class="pagination-disabled" href="#">...</a>
+              </div>
+            </li>
           <li class="pagination-item">
             <div class="pagination-wrapper">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">10</a>
+              <a class="pagination-link" href="#">10</a>
             </div>
           </li>
         </ul>
