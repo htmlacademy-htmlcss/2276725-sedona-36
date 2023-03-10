@@ -122,7 +122,16 @@
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
         <p class="booking-title">Заинтересовались?</p>
         <p class="booking-discription">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</br></p>
-        <button class="booking-but-search" type="button">Поиск Гостиницы В Седоне</button>
+        <button class="booking-but-search" type="button">Поиск Гостиницы В Седоне
+          <!-- <div class="popover popover-cart">
+            <div class="popover-content">
+              <h2 class="popover-title">Поиск Гостиницы В Седоне</h2>
+              <button class="popover-but-close">Закрыть
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </div>
+          </div> -->
+        </button>
       </section>
       <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку?</h2>
@@ -173,6 +182,79 @@
         </svg>
       </a>
     </footer>
+    <div class="popover-container">
+      <div class="popover popover-auth">
+        <section class="popover-content">
+          <h2 class="popover-title">Поиск Гостиницы В Седоне</h2>
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="date-container-arrival">
+              <p class="arrival-data-title">
+                <label class="form-label" for="date-arrival">Дата Заезда:</label>
+              </p>
+              <input class="field-form" type="text" id="date-arrival" name="date-arrival" value="27 апреля 2020">
+            </div>
+            <p class="form-message-arrival">Мы не можем отправить вас в прошлое.</p>
+            <div class="date-container-departure">
+              <p class="departure-data-title">
+                <label class="form-label" for="date-departure">Дата Выезда:</label>
+              </p>
+              <input class="field-form" type="text" id="date-departure" name="date-departure" value="1 сентября 2023">
+              <svg class="image-date" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="15" fill="none" viewBox="0 0 16 15">
+                <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                <path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                <path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+              </svg>
+            </div>
+            <p class="form-message-departure">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="persons-number-wrapper">
+              <div class="adults-number">
+                <p class="adults-title">
+                  <label class="form-label" for="number-adult">Взрослые:</label>
+                </p>
+                <input class="field-form-number" type="number" id="number-adult" min="1" name="number-adult" value="2">
+              </div>
+              <div class="child-number">
+                <p class="child-title">
+                  <label class="form-label" for="number-child">Дети:</label>
+                </p>
+                <input class="field-form-number" type="number" id="number-child" min="0" name="number-child" value="2">
+              </div>
+            </div>
+            <button class="popover-but-search" type="button">Найти</button>
+            <!-- <div class="date-container">
+              <p class="field-group arrival-date">
+                <label class="form-label" for="date-arrival">Дата Заезда:</label>
+              </p>
+                <input class="field-form" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020">
+
+              <p class="field-group departure-date">
+                <label class="form-label" for="date-departure">Дата Выезда:</label>
+              </p>
+                <input class="field-form" type="text" id="date-departure" name="date-departure" placeholder="1 сентября 2023">
+              <div class="persons-number-wrapper">
+                <div class="number-person-wrapper">
+                  <label class="form-label" for="number-adult">Взрослые:</label>
+                  <input class="field-form" type="number" id="number-adult" min="1" name="number-adult" placeholder="2">
+                </div>
+                <div class="number-person-wrapper">
+                  <label class="form-label" for="number-child">Дети:</label>
+                  <input class="field-form" type="number" id="number-child" min="0" name="number-child" placeholder="2">
+                </div>
+              </div>
+            </div> -->
+          </form>
+        <button class="popover-but-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        </section>
+      </div>
+            <!-- <div class="popover-content">
+              <h2 class="popover-title">Поиск Гостиницы В Седоне</h2>
+              <button class="popover-but-close">Закрыть
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </div> -->
+    </div>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
   </body>
 </html>

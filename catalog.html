@@ -72,44 +72,79 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="waterpool" checked>Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="waterpool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-group-second">
-              <legend class="filter-title">Тип жилья:</legend>
+              <legend class="filter-title">Тип Жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="house-type" checked>Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="house-type-hotel" checked>
+                    <span class="control-mark"></span>
+                    </span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="house-type">Мотель
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="house-type-motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="house-type">Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="house-type-apparts">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="amount-group">
-              <legend class="amount-title">Стоимость,₽:</legend>
-              <label for="amount">
+              <legend class="amount-title">Стоимость, ₽:</legend>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                   <input class="range-input range-input-min" type="number" min="0"  name="min-price" placeholder="0 от">
+                   <span class="visually-hidden">Изменить минимальную цену</span>
+                </label>
+                <label class="catalog-filter-label">
+                    <input class="range-input range-input-max" type="number" max="9000"  name="max-price" placeholder="9000 до">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 226px; width: 61px;">
+                    <button class="range-toogle toogle-min" type="button">
+
+                    </button>
+                    <button class="range-toogle toogle-max" type="button">
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- <label for="amount">
                 <div class="amount-wrapper">
                   <input type="number" min="0" form="amount" name="amount" placeholder="0 от">
                   <input type="number" max="9000" form="amount" name="amount" placeholder="9000 от">
@@ -117,7 +152,7 @@
               <div class="range-wrapper">
                 <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
               </div>
-              </label>
+              </label> -->
             </fieldset>
             <div class="button-wrapper">
               <button class="button-submit">Применить</button>
@@ -130,12 +165,12 @@
         <!-- <div class="search-result-wrapper"> -->
           <h2 class="visually-hidden">Фильтр по выбранным опциям</h2>
           <p class="search-result">Найдено гостиниц: 38</p>
-          <!-- <div class="select-control-wrapper"> -->
-          <select class="select-control" aria-label="Фильтр">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <!-- </div> -->
+          <div class="select-control-wrapper">
+            <select class="select-control" aria-label="Фильтр">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
           <div class="view-wrapper">
             <button class="button-view" type="button">
               <svg class="show-cards" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
