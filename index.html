@@ -13,7 +13,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-active" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">О Седоне</a>
@@ -33,7 +33,6 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <div class="favorites-wrapper"></div>
               <span class="favorites-number">12</span>
               <svg aria-hidden="true" focusable="false" width="18" height="17"s xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
                 <path fill="#000" d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
@@ -50,7 +49,7 @@
     <main class="main-container main-index">
       <h1 class="visually-hidden" hidden>Добро пожаловать в Седону</h1>
       <div class="promo">
-        <img class="welcome" src="images/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        <img class="welcome" src="images/backgrounds/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       </div>
       <section class="announcement">
         <h2 class="visually-hidden">Седона и ее преимущества</h2>
@@ -63,7 +62,7 @@
               <hr class="separate-line">
               <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="product-image" src="images/photo-1.jpg" width="800" height="384" alt="Изображение дома.">
+            <img class="product-image" src="images/backgrounds/photo-1.jpg" width="800" height="384" alt="Изображение дома.">
           </li>
           <li class="advantages-item-list">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -81,7 +80,7 @@
             <p class="advantages-discription">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <img class="product-image" src="images/photo-2.jpg" width="800" height="385" alt="Вид на мост дьявола.">
+            <img class="product-image" src="images/backgrounds/photo-2.jpg" width="800" height="385" alt="Вид на мост дьявола.">
             <div class="advantages-text-container">
               <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
               <hr class="separate-line">
@@ -122,25 +121,14 @@
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
         <p class="booking-title">Заинтересовались?</p>
         <p class="booking-discription">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</br></p>
-        <button class="booking-but-search" type="button">Поиск Гостиницы В Седоне
-          <!-- <div class="popover popover-cart">
-            <div class="popover-content">
-              <h2 class="popover-title">Поиск Гостиницы В Седоне</h2>
-              <button class="popover-but-close">Закрыть
-                <span class="visually-hidden">Закрыть</span>
-              </button>
-            </div>
-          </div> -->
-        </button>
+        <button class="booking-but-search" type="button">Поиск Гостиницы В Седоне</button>
       </section>
       <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку?</h2>
           <p class="subscribe-discription">Только полезная информация и никакого спама,<br>честное бойскаутское!</br></p>
           <form class="email-form" action="#" method="post">
-            <label>
-              <span class="visually-hidden">Подписка на рассылку</span>
-              <input class="field" placeholder="Ваш email" type="email" name="email-form" id="email-form" required>
-            </label>
+            <span class="visually-hidden">Подписка на рассылку</span>
+            <input class="field" placeholder="Ваш email" type="email" name="email-form" id="email-form" required>
             <button class="email-form-submit" type="submit">Подписаться</button>
           </form>
       </section>
@@ -182,7 +170,7 @@
         </svg>
       </a>
     </footer>
-    <div class="popover-container">
+    <div class="visually-hidden popover-container">
       <div class="popover popover-auth">
         <section class="popover-content">
           <h2 class="popover-title">Поиск Гостиницы В Седоне</h2>
@@ -191,14 +179,19 @@
               <p class="arrival-data-title">
                 <label class="form-label" for="date-arrival">Дата Заезда:</label>
               </p>
-              <input class="field-form" type="text" id="date-arrival" name="date-arrival" value="27 апреля 2020">
+              <input class="field-form-data" type="text" id="date-arrival" name="date-arrival" value="27 апреля 2020">
+              <svg class="image-date" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="15" fill="none" viewBox="0 0 16 15">
+                <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                <path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                <path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+              </svg>
             </div>
             <p class="form-message-arrival">Мы не можем отправить вас в прошлое.</p>
             <div class="date-container-departure">
               <p class="departure-data-title">
                 <label class="form-label" for="date-departure">Дата Выезда:</label>
               </p>
-              <input class="field-form" type="text" id="date-departure" name="date-departure" value="1 сентября 2023">
+              <input class="field-form-data" type="text" id="date-departure" name="date-departure" value="1 сентября 2023">
               <svg class="image-date" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="15" fill="none" viewBox="0 0 16 15">
                 <path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
                 <path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
@@ -221,39 +214,12 @@
               </div>
             </div>
             <button class="popover-but-search" type="button">Найти</button>
-            <!-- <div class="date-container">
-              <p class="field-group arrival-date">
-                <label class="form-label" for="date-arrival">Дата Заезда:</label>
-              </p>
-                <input class="field-form" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020">
-
-              <p class="field-group departure-date">
-                <label class="form-label" for="date-departure">Дата Выезда:</label>
-              </p>
-                <input class="field-form" type="text" id="date-departure" name="date-departure" placeholder="1 сентября 2023">
-              <div class="persons-number-wrapper">
-                <div class="number-person-wrapper">
-                  <label class="form-label" for="number-adult">Взрослые:</label>
-                  <input class="field-form" type="number" id="number-adult" min="1" name="number-adult" placeholder="2">
-                </div>
-                <div class="number-person-wrapper">
-                  <label class="form-label" for="number-child">Дети:</label>
-                  <input class="field-form" type="number" id="number-child" min="0" name="number-child" placeholder="2">
-                </div>
-              </div>
-            </div> -->
           </form>
+        </section>
         <button class="popover-but-close">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        </section>
-      </div>
-            <!-- <div class="popover-content">
-              <h2 class="popover-title">Поиск Гостиницы В Седоне</h2>
-              <button class="popover-but-close">Закрыть
-                <span class="visually-hidden">Закрыть</span>
-              </button>
-            </div> -->
+        <!-- </section> -->
     </div>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
   </body>
