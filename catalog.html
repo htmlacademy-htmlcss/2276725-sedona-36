@@ -124,35 +124,21 @@
               <legend class="amount-title">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                   <input class="range-input range-input-min" type="number" min="0"  name="min-price" placeholder="0 от">
-                   <span class="visually-hidden">Изменить минимальную цену</span>
+                   <input class="range-input range-input-min" type="number" min="0"  name="min-price" value="0">
+                   <span class="price-range">от</span>
                 </label>
                 <label class="catalog-filter-label">
-                    <input class="range-input range-input-max" type="number" max="9000"  name="max-price" placeholder="9000 до">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
+                    <input class="range-input range-input-max" type="number" max="9000"  name="max-price" value="9000">
+                    <span class="price-range">до</span>
                 </label>
               </div>
-              <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 226px; width: 61px;">
-                    <button class="range-toogle toogle-min" type="button">
-
-                    </button>
-                    <button class="range-toogle toogle-max" type="button">
-
-                    </button>
-                  </div>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toogle toogle-min" type="button"></button>
+                  <button class="range-toogle toogle-max" type="button"></button>
                 </div>
               </div>
-              <!-- <label for="amount">
-                <div class="amount-wrapper">
-                  <input type="number" min="0" form="amount" name="amount" placeholder="0 от">
-                  <input type="number" max="9000" form="amount" name="amount" placeholder="9000 от">
-                </div>
-              <div class="range-wrapper">
-                <input type="range" min="0" max="9000" step="100" form="amount" name="amount">
-              </div>
-              </label> -->
+
             </fieldset>
             <div class="button-wrapper">
               <button class="button-submit">Применить</button>
