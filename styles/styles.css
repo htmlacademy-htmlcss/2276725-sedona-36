@@ -38,20 +38,20 @@ body {
 }
 
 .navigation {
-  height: 64px;
   display: flex;
   flex-wrap: nowrap;
   align-items: start;
 }
 
 .navigation-logo {
+  flex-shrink: 0;
   display: block;
+  width: 140px;
   margin: 0 28px 0 0;
 }
 
 .page-header-logo {
-  position: relative;
-  display: block;
+  position: absolute;
 }
 
 .navigation-list {
@@ -90,6 +90,7 @@ body {
 
 .navigation-user {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: nowrap;
   margin: 0 0 0 auto;
   padding: 0;
@@ -148,6 +149,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.want-this:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
 /* ---------- ! navigation ------------------- */
 
 /* ------main-index ------- */
@@ -213,7 +218,6 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
 }
-
 
 .advantages-text-container {
   display: flex;
@@ -410,6 +414,10 @@ body {
   background-color: #756157;
 }
 
+.booking-but-search:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
 /* -------- ! booking ----------- */
 
 /* -------- subscribe ---------- */
@@ -478,6 +486,12 @@ body {
   outline: 2px solid #000000;
 }
 
+.field:disabled {
+  background-color: #e5e5e5;
+  outline: none;
+  cursor: default;
+}
+
 input[type="email"]::placeholder {
   font-size: 18px;
   line-height: 24px;
@@ -518,6 +532,10 @@ input[type="email"]::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.email-form-submit:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
 /* ------- ! subscribe ----------- */
 
 /* ---------- footer ---------*/
@@ -700,6 +718,12 @@ input[type="email"]::placeholder {
   outline: 2px solid #000000;
 }
 
+.field-form-data:disabled {
+  background-color: #e5e5e5;
+  opacity: 60%;
+  cursor: default;
+  outline: none;
+}
 .form-message-arrival {
   max-width: 280px;
   margin: 4px 0 20px;
@@ -808,6 +832,11 @@ input[type="email"]::placeholder {
   outline: none;
 }
 
+.but-change-number-decrease:disabled .sign-minus {
+  color: #e5e5e5;
+  cursor: default;
+}
+
 .field-form-number {
   max-width: 31px;
   margin: 0;
@@ -882,6 +911,11 @@ input[type="number"]:focus {
   border: none;
   opacity: 20%;
   outline: none;
+}
+
+.but-change-number-increase:disabled .sign-plus {
+  color: #e5e5e5;
+  cursor: default;
 }
 
 .child-number {
@@ -990,6 +1024,11 @@ input[type="number"]:focus {
   background-color: #68a2ca;
   border: none;
   outline: none;
+}
+
+.modal-but-search:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
 }
 
 .modal-but-close {
@@ -1104,6 +1143,7 @@ input[type="number"]:focus {
 .breadcrumbs-item:focus:not(:first-child) {
   outline: 1px solid #82b3d3;
 }
+
 .arrow-next-page {
   content: url(../images/mini-icons/arrow-next.svg);
   margin: 0 10.8px;
@@ -1169,32 +1209,6 @@ input[type="number"]:focus {
   line-height: 23px;
 }
 
-.control-input[type="radio"] + .control-mark {
-  border-radius: 10px;
-}
-
-.control-input[type="radio"]:checked + .control-mark::after {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: #3f5e72;
-  border-radius: 5px;
-}
-
-.control-input[type="checkbox"]:checked + .control-mark::after {
-  position: absolute;
-  content: url(../images/mini-icons/view-checked.svg);
-  top: -1px;
-  left: 4px;
-}
-
-.control-input:focus + .control-mark {
-  outline: 3px solid #83b3d3;
-}
-
 .control-mark {
   position: absolute;
   top: 0;
@@ -1230,6 +1244,36 @@ input[type="number"]:focus {
 .control:active .control-label {
   border: none;
   opacity: 30%;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 10px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 5px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: url(../images/mini-icons/view-checked.svg);
+  top: -1px;
+  left: 4px;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 60%;
 }
 
 .filter-group-second {
@@ -1293,6 +1337,10 @@ input[type="number"]:focus {
 .range-input:active {
   background-color: #f2f2f2;
   outline: 2px solid #000000;
+}
+
+.range-input:disabled {
+  background-color: #e6e6e6;
 }
 
 .range-input[type="number"] {
@@ -1405,6 +1453,11 @@ input[type="number"]:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-submit:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
 .button-reset {
   padding: 8px 57.5px;
   font-family: "PT Sans", sans-serif;
@@ -1430,6 +1483,11 @@ input[type="number"]:focus {
 
 .button-reset:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reset:disabled {
+  opacity: 10%;
+  cursor: default;
 }
 /* -------- ! hotel-choice ------- */
 
@@ -1644,6 +1702,11 @@ input[type="number"]:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.hotel-card-button-favorites:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
 .star-rating {
   display: flex;
   padding: 0;
@@ -1699,6 +1762,10 @@ input[type="number"]:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.hotel-card-button-in-favorites:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
 /* ----------- ! hotels --------- */
 
 /* -------- pagination -------- */
